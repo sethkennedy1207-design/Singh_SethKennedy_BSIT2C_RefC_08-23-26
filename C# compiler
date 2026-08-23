@@ -1,0 +1,36 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text.RegularExpressions;
+
+namespace HelloWorld
+{
+    public class Program
+    {
+        public static void Main(string[] args)
+        {
+            int age = 19;
+            string name = "Seth";
+            bool pogikaba = true;
+            double tangkad = 1.75;
+            char middleInitial = 'D';
+
+            Console.Write("What is your name? ");
+            name = Console.ReadLine();
+
+            Console.Write("How old are you? ");
+            age = Convert.ToInt32(Console.ReadLine());
+
+            Console.Write("How tall are you? ");
+            tangkad = double.Parse(Console.ReadLine());
+
+            Console.Write("What is your middle initial? ");
+            middleInitial = Convert.ToChar(Console.ReadLine());
+
+            Console.Write("Are you handsome? (true/false) ");
+            pogikaba = bool.Parse(Console.ReadLine());
+
+            Console.WriteLine($"My name is {name}, I am {age} years old, I am {tangkad} meters tall, my middle initial is {middleInitial}, and it is {pogikaba} that I am handsome.");
+        }
+    }
+}
