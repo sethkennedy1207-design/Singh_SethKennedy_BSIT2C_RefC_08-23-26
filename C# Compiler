@@ -1,0 +1,46 @@
+ACTIVITY 1
+
+using System;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        string name = "Seth";
+        int age = 19;
+        double tangkad = 1.75;
+        bool pogikaba = true;
+        char middleInitial = 'D';
+
+        Console.WriteLine("Age:" + age);
+        Console.WriteLine("Name:" + name);
+        Console.WriteLine("Pogikaba:" + pogikaba);
+        Console.WriteLine("Physical Appearance (Height in meters): " + tangkad);
+        Console.WriteLine("Middle Initial:" + middleInitial);
+    }
+}
+
+ACTIVITY 2
+
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text.RegularExpressions;
+
+namespace HelloWorld
+{
+    public class Program
+    {
+        public static void Main(string[] args)
+        {
+            int age = 19;
+            string name = "Seth";
+            bool pogikaba = true;
+            double tangkad = 1.75;
+            char middleInitial ='D';
+
+            Console.WriteLine($"Hi my name is {name}, I am {age} years old, my height is {tangkad} meters. My middle initial is {middleInitial} and is it {pogikaba} that I am handsome?");
+        }
+    }
+}
